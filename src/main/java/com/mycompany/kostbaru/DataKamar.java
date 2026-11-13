@@ -4,11 +4,15 @@
  */
 package com.mycompany.kostbaru;
 
+import java.io.Serializable;
+
 /**
  *
  * @author resti
  */
-public abstract class DataKamar {
+public abstract class DataKamar implements Serializable {
+    
+    private static final long serialVersionUID = 1L;
     
     private int nomor;
     private String penghuni;

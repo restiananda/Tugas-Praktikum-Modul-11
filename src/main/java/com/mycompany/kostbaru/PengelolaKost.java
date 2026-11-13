@@ -6,16 +6,19 @@ package com.mycompany.kostbaru;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.io.Serializable;
 
 /**
  *
  * @author resti
  */
-public class PengelolaKost {
+public class PengelolaKost implements Serializable {
 
     private ArrayList<DataKamar> daftarKamar;
     private HashMap<String, Penghuni> dataPenghuni;
     private FasilitasKost fasilitas;
+    private static final long serialVersionUID = 1L;
+
 
     public PengelolaKost() {
         daftarKamar = new ArrayList<>();

@@ -4,11 +4,15 @@
  */
 package com.mycompany.kostbaru;
 
+import java.io.Serializable;
+
 /**
  *
  * @author resti
  */
-public class FasilitasKost {
+public class FasilitasKost implements Serializable {
+    
+    private static final long serialVersionUID = 1L;
     
     private String namaFasilitas;
     private String lokasi;

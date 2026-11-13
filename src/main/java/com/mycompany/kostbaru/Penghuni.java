@@ -4,11 +4,15 @@
  */
 package com.mycompany.kostbaru;
 
+import java.io.Serializable;
+
 /**
  *
  * @author resti
  */
-public class Penghuni {
+public class Penghuni implements Serializable {
+    
+    private static final long serialVersionUID = 1L;
     
     private String id;
     private String nama;
